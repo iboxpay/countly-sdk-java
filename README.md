@@ -74,7 +74,7 @@ Call setUserData() method to transfer user data.
   custom.put("city", "Istanbul");
   custom.put("address", "My house 11");
 
-  Countly.sharedInstance().init("https://asia-try.count.ly", "739d0f87d910caf808ea9209888c25d64b6a802a", Config.TYPE_HTTP_CONSUMER);
+  Countly.sharedInstance().init("server url", "app key", Config.TYPE_HTTP_CONSUMER);
 
   Countly.sharedInstance().setUserData(data, custom);
    

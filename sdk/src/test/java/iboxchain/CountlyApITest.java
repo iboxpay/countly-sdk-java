@@ -43,8 +43,8 @@ public class CountlyApITest {
 
   @Before
   public void setup() {
-    Config.SERVER_URL = "https://asia-try.count.ly";
-    Config.APP_KEY = "739d0f87d910caf808ea9209888c25d64b6a802a";
+    Config.SERVER_URL = "https://serverUrl";
+    Config.APP_KEY = "appkey";
     Config.CONSUMER_TYPE = Config.TYPE_HTTP_CONSUMER;
   }
 
@@ -215,7 +215,7 @@ public class CountlyApITest {
 
     String requestData = consumer.prepareRequestData(event.toJSON().toString(), Config.TYPE_SEND_EVENT);
     requestData = java.net.URLDecoder.decode(requestData, "UTF-8");
-    assert (requestData.contains("app_key=739d0f87d910caf808ea9209888c25d64b6a802a"));
+    assert (requestData.contains("app_key=appkey"));
     assert (requestData.contains("timestamp="));
     assert (requestData.contains("hour="));
     assert (requestData.contains("dow="));
