@@ -1,4 +1,4 @@
-## countly-sdk-java
+## Countly Java SDK
 ### Init SDK
 When program startup (such as the public static void main(String[] args) method), you should call init() method to init SDK
 ```
